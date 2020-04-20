@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: "recipes",
     component: RecipesComponent,
-    children: [
+    children: [{ path: ":id", component: RecipeDetailComponent },
     { path: "", component: RecipeStartComponent }]
   },
   { path: "shopping-list", component: ShoppingListComponent }
