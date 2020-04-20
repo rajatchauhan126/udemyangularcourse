@@ -11,11 +11,11 @@ const routes: Routes = [
   {
     path: "recipes",
     component: RecipesComponent,
-    children: [{ path: "id", component: RecipeDetailComponent }]
+    children: [
+      { path: "id", component: RecipeDetailComponent },
+      { path: "recipe-start", component: RecipeStartComponent }
+    ]
   },
-  {
-    path: '', component: RecipeStartComponent;
-  }
   { path: "shopping-list", component: ShoppingListComponent }
 ];
 
