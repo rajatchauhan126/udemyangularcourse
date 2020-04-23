@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Action } from '@ngrx/store';
 
 import { Ingredient } from '../../shared/ingredient.model';
@@ -48,3 +49,14 @@ export type ShoppingListActions =
   | DeleteIngredient
   | StartEdit
   | StopEdit;
+=======
+import { Action } from "@ngrx/store";
+import { Ingredient } from "../../shared/ingredient.model";
+
+export const ADD_INGREDIENT = 'ADD_INGREDIENT';
+
+export class AddIngredient implements Action {
+   readonly type = ADD_INGREDIENT;
+   payload : Ingredient;
+}
+>>>>>>> b1418966e9d5871db7da1fbe7a598d49feb65a11

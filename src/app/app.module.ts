@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,6 +16,20 @@ import * as fromApp from './store/app.reducer';
 import { AuthEffects } from './auth/store/auth.effects';
 import { environment } from '../environments/environment';
 import { RecipeEffects } from './recipes/store/recipe.effects';
+=======
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
+import { StoreModule } from "@ngrx/store";
+
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./header/header.component";
+import { AppRoutingModule } from "./app-routing.module";
+import { SharedModule } from "./shared/shared.module";
+import { CoreModule } from "./core.module";
+import { LoggingService } from "./logging.service";
+import { ShoppingListReducer } from "./shopping-list/store/shopping-list.reducer";
+>>>>>>> b1418966e9d5871db7da1fbe7a598d49feb65a11
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -22,10 +37,14 @@ import { RecipeEffects } from './recipes/store/recipe.effects';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+<<<<<<< HEAD
     StoreModule.forRoot(fromApp.appReducer),
     EffectsModule.forRoot([AuthEffects, RecipeEffects]),
     StoreDevtoolsModule.instrument({ logOnly: environment.production }),
     StoreRouterConnectingModule.forRoot(),
+=======
+    StoreModule.forRoot({ shoppingList: ShoppingListReducer }),
+>>>>>>> b1418966e9d5871db7da1fbe7a598d49feb65a11
     SharedModule,
     CoreModule
   ],
