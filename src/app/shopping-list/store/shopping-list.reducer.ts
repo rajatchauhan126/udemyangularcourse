@@ -1,7 +1,8 @@
 
 
-import { Ingredient } from '../../shared/Ingredient.model';
 import * as ShoppingListActions from './shopping-list.actions';
+
+import { Ingredient } from '../../shared/Ingredient.model';
 
 const initialState = {
   ingredients :
