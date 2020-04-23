@@ -7,8 +7,8 @@ import { Ingredient } from '../../shared/Ingredient.model';
 const initialState = {
   ingredients :
  [
-    new Ingredient('Apples', 5),
-    new Ingredient('Tomatoes', 10),
+    // new Ingredient('Apples', 5),
+    // new Ingredient('Tomatoes', 10),
   ]
 }
 
