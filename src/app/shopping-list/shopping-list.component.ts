@@ -15,30 +15,19 @@ import * as fromApp from '../store/app.reducer';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit, OnDestroy {
-<<<<<<< HEAD
+
   ingredients: Observable<{ ingredients: Ingredient[] }>;
   private subscription: Subscription;
 
   constructor(
     private loggingService: LoggingService,
     private store: Store<fromApp.AppState>
-=======
-  ingredients: Observable<{ingredients : Ingredient[] }>;
-  private subscription: Subscription;
 
-  constructor(
-    private slService: ShoppingListService,
-    private loggingService: LoggingService,
-    private store : Store<{shoppingList: {ingredients : Ingredient[] }}>
->>>>>>> b1418966e9d5871db7da1fbe7a598d49feb65a11
   ) {}
 
   ngOnInit() {
     this.ingredients = this.store.select('shoppingList');
-<<<<<<< HEAD
-=======
 
->>>>>>> b1418966e9d5871db7da1fbe7a598d49feb65a11
     // this.ingredients = this.slService.getIngredients();
     // this.subscription = this.slService.ingredientsChanged.subscribe(
     //   (ingredients: Ingredient[]) => {
