@@ -7,5 +7,6 @@ https://console.firebase.google.com/project/sciencearchives-4a062/database/scien
 
 1. create database.
 2. set rules , 'auth !== null'
+3. authentication 
 
 https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password
