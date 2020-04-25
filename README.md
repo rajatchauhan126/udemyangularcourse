@@ -10,3 +10,6 @@ https://console.firebase.google.com/project/sciencearchives-4a062/database/scien
 3. authentication 
 
 https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password
+
+
+4. add key in the environment.ts file
