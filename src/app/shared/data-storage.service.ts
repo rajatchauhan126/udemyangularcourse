@@ -15,7 +15,7 @@ export class DataStorageService {
   ) {}
 
   storeRecipes() {
-    console.log('store recipes');
+
     const recipes = this.recipeService.getRecipes();
     this.http
       .put(
@@ -28,6 +28,7 @@ export class DataStorageService {
   }
 
   fetchRecipes() {
+        console.log('fetch recipes');
     return this.http
       .get<Recipe[]>(
         'https://sciencearchives-4a062.firebaseio.com/recipes.json'
